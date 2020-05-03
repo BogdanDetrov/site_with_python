@@ -10,7 +10,7 @@ def index():
     title = "Новости Python"
     weather = weather_by_city("Vladivostok")
     news_list = get_python_news()
-    return render_template('index.html', page_title=title, weather=weather, news=news_list)
+    return render_template('index.html', page_title=title, weather=weather,news_list=news_list)
 
 if __name__ == "__main__":
     app.run(debug=True)
